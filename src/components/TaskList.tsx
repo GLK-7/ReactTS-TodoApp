@@ -49,7 +49,7 @@ const TaskList = ({ taskList, setTaskList }: Props) => {
       <Modal task={selectedTask} handleRemoveTask={handleRemoveTask} />
       <div className="w-full mb-8">
         <div className="text-white rounded w-full gap-4 flex flex-col">
-          <h2 className="text-xl text-center font-semibold">Tarefas</h2>
+          <h2 className="text-xl text-center font-semibold">{`Tarefas (${taskList.length})`}</h2>
           <ul className="flex flex-col gap-4">
             {taskList.map((task: ITask) => (
               <li

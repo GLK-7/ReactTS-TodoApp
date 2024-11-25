@@ -24,7 +24,7 @@ function App() {
               btnText="Adicionar"
             />
           </div>
-          <TaskList taskList={taskList} setTaskList={setTaskList} />
+          {taskList.length > 0 &&<TaskList taskList={taskList} setTaskList={setTaskList} />}
         </div>
       </div>
     </>
