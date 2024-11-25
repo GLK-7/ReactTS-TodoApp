@@ -9,7 +9,7 @@ import { ITask } from '../interfaces/Task';
 interface Props {
   taskList?: ITask[] | undefined;
   setTaskList?: React.Dispatch<React.SetStateAction<ITask[]>>;
-  setEditingTaskId?: React.Dispatch<React.SetStateAction<ITask[]>>;
+  setEditingTaskId?: React.Dispatch<React.SetStateAction<number | null>>;
   btnText: string;
   task?: ITask;
 }
