@@ -32,6 +32,6 @@ Este é um projeto simples de uma aplicação **To-Do** desenvolvida com **React
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/react-ts-todo.git
+   git clone https://github.com/GLK-7/ReactTS-TodoApp.git
    cd react-ts-todo
    ```
