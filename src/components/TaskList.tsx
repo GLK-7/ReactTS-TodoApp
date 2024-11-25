@@ -23,7 +23,7 @@ interface Props {
 
 const TaskList = ({ taskList, setTaskList }: Props) => {
   const [editingTaskId, setEditingTaskId] = useState<number | null>(null);
-  const [selectedTask, setSelectedTask] = useState(null);
+  const [selectedTask, setSelectedTask] = useState<ITask | null>(null);
 
   const hideOrShowModal = (display: boolean) => {
     const modal = document.querySelector('#modal');
@@ -36,7 +36,7 @@ const TaskList = ({ taskList, setTaskList }: Props) => {
 
   const handleRemoveTask = (task: ITask): void => {
     if (taskList) {
-      setTaskList(
+      setTaskList?.(
         taskList.filter((taskLn) => {
           return taskLn.id !== task.id;
         })
